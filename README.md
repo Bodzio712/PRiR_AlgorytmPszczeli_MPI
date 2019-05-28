@@ -1,2 +1,2 @@
 # PRiR_AlgorytmPszczeli_MPI
-Później się przerzuci na iSOD
+example.py uruchamia program
