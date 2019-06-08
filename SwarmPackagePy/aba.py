@@ -66,6 +66,7 @@ class aba(intelligence.sw):
             if function(Pbest) < function(Gbest):
                 Gbest = Pbest
 
+
         self._set_Gbest(Gbest)
 
     def __new(self, l, c, lb, ub):

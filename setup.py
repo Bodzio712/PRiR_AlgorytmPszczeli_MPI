@@ -17,7 +17,7 @@ setup(
     license='none',
 
     keywords='swarm algorithms, python',
-    install_requires=['numpy', 'matplotlib>=2.0.0', 'pandas', 'pytest'],
+    install_requires=['numpy', 'matplotlib>=2.0.0', 'pandas', 'pytest', 'mpi4py'],
     platforms=['Unix', 'Windows']
 
 )
