@@ -33,17 +33,25 @@ comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
 p_threads = 4
 
-sd = xd(testFunctions.cross_in_tray_function)
-print(sd.fun([1.0,1.0]))
-
 if rank == 0:
-    data = {'n': 7,'function': testFunctions.cross_in_tray_function, 'type':'only_swarms','lb':-10,'ub':10,"dim":2, 'iterations':100}#'stricted_swarms' - other type
+    data = {
+        'n': 7,
+        'function': testFunctions.cross_in_tray_function,
+        'type': 'only_swarms',#'stricted_swarms' - other type
+        'lb': -10,
+        'ub': 10,
+        "dim": 3,
+        'iterations': 100
+    }
     for i in range(1,p_threads):
         print(i)
         comm.send(data, dest=i, tag=11)
+        print(comm.recv(source=i,tag=12))
+
+
 elif rank > 0:
     data = comm.recv(source=0, tag=11)
     optimizer = aba.aba(data['n'],data['function'], data['lb'], data['ub'], data['dim'], data['iterations'])
-    print(data['n'])
+    comm.send(optimizer.get_Gbest(),dest=0,tag=12)
 
 

@@ -54,7 +54,10 @@ class aba(intelligence.sw):
             newbee = self.__new(best, count[1], lb, ub) + self.__new(selected,
                                                                    count[3],
                                                                    lb, ub)
+
             m = len(newbee)
+            if m > n: #tu był jakiś problem z "m" ,  jak było większe od n to się wymiar robił ujemny w 61
+                m = n
             self.__agents = newbee + list(np.random.uniform(lb, ub, (n - m,
                                                                    dimension)))
 
