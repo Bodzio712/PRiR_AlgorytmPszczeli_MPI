@@ -74,7 +74,6 @@ Avaible test functions (in SwarmPackagePy.testFunctions)
     drop_wave_function
 """
 
-from SwarmPackagePy.aba import aba
 from SwarmPackagePy.animation import animation, animation3D
 
 _version_ = '1.0.0'
