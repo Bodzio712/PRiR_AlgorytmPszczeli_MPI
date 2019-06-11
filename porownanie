@@ -1,0 +1,98 @@
+cetlinsb@bartosz-VM-D:~/PycharmProjects/PRiR_AlgorytmPszczeli_MPI$ mpiexec -n 9 python3 pfs.py 9 1000 1000
+[-1.3495507022057427, -1.3492533659653478]
+[1.3498283122801027, 1.349447739289592]
+[1.3492442184918125, 1.3497437036477338]
+[-1.3491089035404094, -1.3496554017784685]
+[-1.3492247811307017, -1.3495375717598996]
+[-1.349191682479399, -1.3492675321585994]
+[1.3494608072409562, -1.3492254974254254]
+[-1.3495222363523314, -1.3493741738215577]
+execution time: 54.37284564971924
+cetlinsb@bartosz-VM-D:~/PycharmProjects/PRiR_AlgorytmPszczeli_MPI$ mpiexec -n 9 python3 pfs.py 9 1000 1000
+[1.3491408121382629, 1.3496472647725641]
+[-1.3496006363453787, -1.349368210063687]
+[1.3492472057560885, -1.3490172204045878]
+[-1.3496530535967313, 1.3497613329196256]
+[1.3489903835993269, -1.3493629874156416]
+[-1.3494018217272399, 1.3497620402000376]
+[-1.3496497302029562, 1.3496827820746038]
+[1.3492732045574738, -1.3493278396465975]
+execution time: 46.23002576828003
+cetlinsb@bartosz-VM-D:~/PycharmProjects/PRiR_AlgorytmPszczeli_MPI$ mpiexec -n 9 python3 pfs.py 9 10000 1000
+[1.3494507982846868, -1.3494780632282568]
+[1.349393568254248, -1.3497272988760838]
+[1.349625478340916, -1.3494077917569052]
+[-1.3495529495663845, -1.3490875137940668]
+[-1.3497461003176066, 1.3495865259913558]
+[-1.3492705737148158, 1.3492661935036054]
+[-1.3496132598722301, -1.3496831856539433]
+[-1.3494218922371113, -1.349586972267641]
+execution time: 470.5670349597931
+
+Pojedyńcze:
+cetlinsb@bartosz-VM-D:~/PycharmProjects/PRiR_AlgorytmPszczeli_MPI$ python3 pfs.py 1000 1000
+41.87
+cetlinsb@bartosz-VM-D:~/PycharmProjects/PRiR_AlgorytmPszczeli_MPI$ python3 pfs.py 10000 1000
+425.0
+
+
+
+cetlinsb@bartosz-VM-D:~/PycharmProjects/PRiR_AlgorytmPszczeli_MPI$ mpiexec -n 9 python3 pfs.py 9 10000 1000
+[-1.3491791859593356, 1.349295961907771]
+[1.3495213831073611, 1.3494621867080183]
+[-1.3497991600001538, -1.349396220545311]
+[1.3494458529904592, -1.349257109352342]
+[1.3497175981527283, -1.3494618120577164]
+[1.3490585000321795, -1.3493999361573348]
+[-1.3493692065159633, -1.3494728004397085]
+[1.3494613593115021, -1.349550167800191]
+execution time: 136.71393299102783
+
+cetlinsb@bartosz-VM-D:~/PycharmProjects/PRiR_AlgorytmPszczeli_MPI$ mpiexec -n 9 python3 pfs.py 9 200 500
+Global best: [3.1415926562964733, 3.1415926488198895]
+execution time: 1.3450398445129395
+cetlinsb@bartosz-VM-D:~/PycharmProjects/PRiR_AlgorytmPszczeli_MPI$ mpiexec -n 9 python3 pfs.py 9 200 200
+Global best: [3.1415926479663376, 3.1415926575574975]
+execution time: 0.940232515335083
+cetlinsb@bartosz-VM-D:~/PycharmProjects/PRiR_AlgorytmPszczeli_MPI$ mpiexec -n 9 python3 pfs.py 9 200 200
+Global best: [-0.2097722620760501, 0.476046033386382]
+execution time: 0.9250223636627197
+cetlinsb@bartosz-VM-D:~/PycharmProjects/PRiR_AlgorytmPszczeli_MPI$ mpiexec -n 9 python3 pfs.py 9 9 9
+Global best: [6.972844832814371, 4.5626854158769845]
+execution time: 0.07659792900085449
+cetlinsb@bartosz-VM-D:~/PycharmProjects/PRiR_AlgorytmPszczeli_MPI$ mpiexec -n 9 python3 pfs.py 9 50 150
+Global best: [-4.977306319401213, 6.112088461208373]
+execution time: 0.20709538459777832
+cetlinsb@bartosz-VM-D:~/PycharmProjects/PRiR_AlgorytmPszczeli_MPI$ mpiexec -n 9 python3 pfs.py 9 1000 1000
+Global best: [3.141592652512461, 3.1415926592128405]
+execution time: 7.38392972946167
+cetlinsb@bartosz-VM-D:~/PycharmProjects/PRiR_AlgorytmPszczeli_MPI$ mpiexec -n 5 python3 pfs.py 5 1000 1000
+Global best: [3.1415926542794064, 3.141592651252359]
+execution time: 5.035702228546143
+cetlinsb@bartosz-VM-D:~/PycharmProjects/PRiR_AlgorytmPszczeli_MPI$ mpiexec -n 3 python3 pfs.py 3 1000 1000
+Global best: [3.141592660861792, 3.141592653018721]
+execution time: 7.343786239624023
+cetlinsb@bartosz-VM-D:~/PycharmProjects/PRiR_AlgorytmPszczeli_MPI$ mpiexec -n 4 python3 pfs.py 4 1000 1000
+Global best: [3.141592652185216, 3.1415926583361737]
+execution time: 5.320533037185669
+cetlinsb@bartosz-VM-D:~/PycharmProjects/PRiR_AlgorytmPszczeli_MPI$ mpiexec -n 6 python3 pfs.py 6 1000 1000
+Global best: [3.1415926528832765, 3.1415926494802195]
+execution time: 3.768847942352295
+cetlinsb@bartosz-VM-D:~/PycharmProjects/PRiR_AlgorytmPszczeli_MPI$ mpiexec -n 7 python3 pfs.py 7 1000 1000
+Global best: [3.1415926520798574, 3.141592655085507]
+execution time: 3.4070863723754883
+cetlinsb@bartosz-VM-D:~/PycharmProjects/PRiR_AlgorytmPszczeli_MPI$ mpiexec -n 8 python3 pfs.py 8 1000 1000
+Global best: [3.141592657133205, 3.1415926517361354]
+execution time: 3.420726776123047
+cetlinsb@bartosz-VM-D:~/PycharmProjects/PRiR_AlgorytmPszczeli_MPI$ mpiexec -n 8 python3 pfs.py 8 100 100
+Global best: [3.2233388081077816, 3.3220509695385765]
+execution time: 0.06111550331115723
+
+
+cetlinsb@bartosz-VM-D:~/PycharmProjects/PRiR_AlgorytmPszczeli_MPI$ python3 pfs.py 1000 1000
+42.15
+cetlinsb@bartosz-VM-D:~/PycharmProjects/PRiR_AlgorytmPszczeli_MPI$ python3 pfs.py 100 100
+0.41999999999999993
+cetlinsb@bartosz-VM-D:~/PycharmProjects/PRiR_AlgorytmPszczeli_MPI$ python3 pfs.py 200 500
+5.03
+
